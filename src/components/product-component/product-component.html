@@ -1,0 +1,12 @@
+<!-- product.component.html -->
+<div class="products-row">
+  <div class="product">
+    <img [src]="product.image" alt="{{ product.productName }}" width="100" />
+    <h3>{{ product.productName }}</h3>
+    <p>Price: {{ product.price }} ₪</p>
+    <label>
+      <input type="checkbox" [checked]="product.isChecked" (change)="onCheckboxChange()" />
+      Selected
+    </label>
+  </div>
+</div>
